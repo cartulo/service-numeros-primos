@@ -20,6 +20,8 @@ namespace service_numeros_primos
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         // TODO: Adicione suas operações de serviço aqui
+        [OperationContract]
+        String verificarNumeroPrimo(String numero);
     }
 
 

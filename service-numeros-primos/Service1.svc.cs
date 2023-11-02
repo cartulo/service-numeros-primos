@@ -1,4 +1,5 @@
-﻿using System;
+﻿using service_numeros_primos.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -28,6 +29,12 @@ namespace service_numeros_primos
                 composite.StringValue += "Suffix";
             }
             return composite;
+        }
+
+        public String verificarNumeroPrimo(String numero)
+        {
+            Controle controle = new Controle();
+            return controle.executar(numero);
         }
     }
 }
